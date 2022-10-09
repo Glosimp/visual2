@@ -1,0 +1,90 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Energy Consumption per Capita by State",
+  "width": 800,
+  "height": 400,
+  "params": [
+    {
+      "name": "slide",
+      "value": 2016,
+      "bind": {
+        "input": "range",
+        "min": 2016,
+        "max": 2020,
+        "step": 1,
+        "name": "Year: "
+      }
+    }
+  ],
+  "projection": {"type": "equirectangular"},
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/Glosimp/visual2/AREA/VISUAL%20MAP%20B.csv",
+        "format": {"type": "topojson", "feature": "states"}
+      },
+      "transform": [
+        {
+          "calculate": "'Data is not available in ' + datum.properties.STATE_NAME",
+          "as": "note"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "fill": "#ddd",
+        "stroke": "white",
+        "strokeWidth": 1
+      },
+      "encoding": {"tooltip": {"field": "note"}}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/Glosimp/visual2/AREA/VISUAL%20MAP%20B.csv"
+      },
+      "transform": [
+        {
+          "lookup": "State",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/asil0016/FIT-3179-TEST/Homework-Week-10/map_visualisation/js/map_states.topojson",
+              "format": {"type": "topojson", "feature": "states"}
+            },
+            "key": "properties.STATE_NAME"
+          },
+          "as": "geo"
+        },
+        {"filter": "datum.Year == slide"}
+      ],
+      "mark": {"type": "geoshape", "stroke": "#", "strokeWidth": 0.5},
+      "encoding": {
+        "shape": {"field": "geo", "type": "geojson"},
+        "color": {
+          "field": "Energy Consumption per Capita",
+          "type": "quantitative",
+          "scale": {
+            "type": "threshold",
+            "domain": [100, 200, 300, 400, 500, 600],
+            "range": [
+              "#edf8b1",
+              "#c7e9b4",
+              "#7fcdbb",
+              "#41b6c4",
+              "#1d91c0",
+              "#225ea8",
+              "#0c2c84"
+            ]
+          }
+        },
+        "tooltip": [
+          {"field": "State", "type": "nominal", "title": "State"},
+          {
+            "field": "Energy Consumption per Capita",
+            "type": "quantitative",
+            "title": "Energy Consumption per Capita"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {}
+}
