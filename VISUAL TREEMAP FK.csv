@@ -1,0 +1,78 @@
+INDUSTRY,STATE,Black coal,Natural gas,Refined products b,Electricity
+Agriculture,NSW,0.0,0.3,31.0,1.8
+Agriculture,VIC,0.0,0.7,11.1,2.4
+Agriculture,QLD,0.0,0.0,28.1,1.2
+Agriculture,WA,0.0,0.0,23.9,0.7
+Agriculture,SA,0.0,0.1,9.4,0.8
+Agriculture,TAS,0.0,0.0,4.4,0.4
+Agriculture,NT,0.0,0.0,2.1,0.1
+Mining,NSW,0.0,0.3,52.1,17.3
+Mining,VIC,0.0,15.5,2.3,2.5
+Mining,QLD,0.6,123.5,88.7,50.5
+Mining,WA,2.5,200.7,116.0,69.1
+Mining,SA,0.0,5.5,14.4,7.0
+Mining,TAS,0.0,0.1,1.8,1.7
+Mining,NT,0.0,61.2,5.7,9.6
+Manufacturing,NSW,89.5,64.3,44.9,59.2
+Manufacturing,VIC,0.0,58.3,98.6,37.0
+Manufacturing,QLD,45.0,75.6,31.6,49.6
+Manufacturing,WA,31.1,167.9,24.1,22.8
+Manufacturing,SA,0.0,20.9,2.8,8.3
+Manufacturing,TAS,0.0,4.2,5.0,21.9
+Manufacturing,NT,0.0,0.0,0.1,0.2
+Electricity generation,NSW,502.1,17.1,3.6,28.9
+Electricity generation,VIC,0.0,26.4,1.7,23.6
+Electricity generation,QLD,458.5,101.8,10.2,26.5
+Electricity generation,WA,80.4,280.0,25.1,6.9
+Electricity generation,SA,0.0,52.3,1.3,6.1
+Electricity generation,TAS,0.0,2.2,0.2,2.3
+Electricity generation,NT,0.0,43.3,5.4,0.6
+Construction,NSW,0.0,0.1,10.3,3.0
+Construction,VIC,0.0,1.7,8.6,2.4
+Construction,QLD,0.0,0.2,5.4,1.3
+Construction,WA,0.0,0.1,1.9,0.5
+Construction,SA,0.0,0.6,1.4,0.4
+Construction,TAS,0.0,0.0,0.3,0.1
+Construction,NT,0.0,0.0,0.2,0.0
+Transport,NSW,0.0,2.2,414.0,7.1
+Transport,VIC,0.0,2.6,283.2,3.1
+Transport,QLD,0.0,5.4,322.9,6.4
+Transport,WA,0.0,6.9,216.9,6.5
+Transport,SA,0.0,1.4,89.2,0.2
+Transport,TAS,0.0,0.0,25.6,0.0
+Transport,NT,0.0,1.5,22.6,0.0
+Gas Supply,NSW,0.0,1.4,0.0,0.1
+Gas Supply,VIC,0.0,8.7,0.0,0.2
+Gas Supply,QLD,0.0,0.3,0.0,0.1
+Gas Supply,WA,0.0,1.4,0.0,0.2
+Gas Supply,SA,0.0,0.9,0.0,0.0
+Gas Supply,TAS,0.0,0.0,0.0,0.0
+Gas Supply,NT,0.0,0.0,0.0,0.0
+Water and waste c,NSW,0.0,0.2,0.4,2.8
+Water and waste c,VIC,0.0,0.5,0.5,3.8
+Water and waste c,QLD,0.0,0.5,0.2,2.4
+Water and waste c,WA,0.0,0.0,0.2,3.8
+Water and waste c,SA,0.0,0.1,0.1,2.1
+Water and waste c,TAS,0.0,0.0,0.0,0.3
+Water and waste c,NT,0.0,0.0,0.0,0.1
+Commercial and services d,NSW,0.0,15.5,7.6,69.7
+Commercial and services d,VIC,0.0,18.8,0.5,49.0
+Commercial and services d,QLD,0.0,1.1,9.2,43.8
+Commercial and services d,WA,0.0,4.2,9.0,25.1
+Commercial and services d,SA,0.0,3.3,1.9,14.8
+Commercial and services d,TAS,0.0,0.4,1.0,7.3
+Commercial and services d,NT,0.0,0.0,0.9,4.0
+Residential,NSW,0.0,34.8,4.0,81.9
+Residential,VIC,0.0,107.8,2.9,52.0
+Residential,QLD,0.0,4.8,4.1,53.3
+Residential,WA,0.0,10.3,2.1,21.0
+Residential,SA,0.0,7.5,1.5,16.9
+Residential,TAS,0.0,0.4,0.9,8.1
+Other e,NT,0.0,0.0,0.4,2.8
+Other e,NSW,0.0,0.0,10.5,0.0
+Other e,VIC,0.0,0.0,13.0,0.0
+Other e,QLD,0.0,0.0,12.6,0.0
+Other e,WA,0.0,0.0,5.5,0.0
+Other e,SA,0.0,0.0,3.7,0.0
+Other e,TAS,0.0,0.0,0.6,0.0
+Other e,NT,0.0,0.0,0.1,0.0
