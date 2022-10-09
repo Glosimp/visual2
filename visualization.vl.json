@@ -1,0 +1,65 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 600,
+  "description": "Renewable vs Non-Renewable",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Glosimp/visual2/piechart/VISUAL%20LINEAREA%20FR.csv"
+  },
+  "params": [
+    {
+      "name": "Year_Slider",
+      "value": 2008,
+      "bind": {
+        "input": "range",
+        "min": 2008,
+        "max": 2020,
+        "step": 1,
+        "name": "Year: "
+      }
+    }
+  ],
+  "transform": [{"filter": "datum.Year == Year_Slider"}],
+  "encoding": {
+    "theta": {
+      "field": "Energy Consumption",
+      "type": "quantitative",
+      "stack": "normalize"
+    },
+    "color": {"field": "Fuel", "type": "nominal"}
+  },
+  "layer": [
+    {
+      "mark": "arc",
+      "encoding": {
+        "color": {"field": "Fuel", "type": "nominal"},
+        "opacity": {"value": 1},
+        "tooltip": [
+          {"field": "Fuel", "type": "nominal"},
+          {"field": "Energy Consumption", "type": "quantitative", "format": ","}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "line-bottom",
+        "dy": -10,
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "text": {"field": "Energy Consumption", "type": "quantitative"},
+        "color": {"value": "black"},
+        "opacity": {"value": 1},
+        "tooltip": [
+          {"field": "Fuel", "type": "nominal"},
+          {"field": "Energy Consumption", "type": "quantitative", "format": ","}
+        ]
+      }
+    }
+  ],
+  "config": {}
+}
